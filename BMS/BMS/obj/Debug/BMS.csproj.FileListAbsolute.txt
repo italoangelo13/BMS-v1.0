@@ -20,3 +20,4 @@ D:\PROJETOS ITALO\BMS\BMS\BMS\bin\Debug\Microsoft.Threading.Tasks.xml
 D:\PROJETOS ITALO\BMS\BMS\BMS\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
 D:\PROJETOS ITALO\BMS\BMS\BMS\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
 D:\PROJETOS ITALO\BMS\BMS\BMS\bin\Debug\Newtonsoft.Json.xml
+D:\PROJETOS ITALO\BMS\BMS\BMS\obj\Debug\BMS.Dashboard.resources

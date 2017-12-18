@@ -70,6 +70,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
@@ -85,6 +86,14 @@
   <ItemGroup>
     <Compile Include="Classes\BancoDados.cs" />
     <Compile Include="Classes\Controle.cs" />
+    <Compile Include="Classes\Session.cs" />
+    <Compile Include="Classes\Usuario.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +102,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,9 +146,13 @@
     <Content Include="docs\MySqlParameterCollection.xml" />
     <Content Include="docs\MySqlTransaction.xml" />
     <Content Include="imagem\background-triangulos-livrit.jpg" />
+    <Content Include="imagem\favicon.ico" />
     <Content Include="imagem\logo-bms.png" />
     <None Include="Resources\logo-bms.png" />
     <None Include="Resources\background-triangulos-livrit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Administrativo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
