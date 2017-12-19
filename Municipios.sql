@@ -15,98 +15,11 @@
 
 
 --
--- Create schema bms
+-- Create schema liber
 --
 
-CREATE DATABASE IF NOT EXISTS bms;
-USE bms;
-
---
--- Definition of table `cargos`
---
-
-DROP TABLE IF EXISTS `cargos`;
-CREATE TABLE `cargos` (
-  `CAR_CODIGO_ID` int(10) unsigned NOT NULL auto_increment,
-  `CAR_NOME` varchar(255) NOT NULL,
-  PRIMARY KEY  (`CAR_CODIGO_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `cargos`
---
-
-/*!40000 ALTER TABLE `cargos` DISABLE KEYS */;
-INSERT INTO `cargos` (`CAR_CODIGO_ID`,`CAR_NOME`) VALUES 
- (1,'ADMINISTRADOR'),
- (2,'GERENTE'),
- (3,'SUPERVISOR'),
- (4,'VENDEDOR'),
- (5,'OPERADOR DE CAIXA');
-/*!40000 ALTER TABLE `cargos` ENABLE KEYS */;
-
-
---
--- Definition of table `empresa`
---
-
-DROP TABLE IF EXISTS `empresa`;
-CREATE TABLE `empresa` (
-  `EMP_CODIGO_ID` int(10) unsigned NOT NULL auto_increment,
-  `EMP_NOME_REDUZIDO` varchar(50) default NULL,
-  `EMP_NOME_FANTASIA` varchar(255) default NULL,
-  `EMP_RAZAO_SOCIAL` varchar(255) default NULL,
-  `EMP_CNPJ` varchar(14) default NULL,
-  `EMP_ENDERECO` varchar(100) default NULL,
-  `EMP_NUMERO` varchar(5) default NULL,
-  `EMP_BAIRRO` varchar(100) default NULL,
-  `EMP_CODIGO_CIDADE_ID` int(10) unsigned default NULL,
-  `EMP_UF` varchar(2) default NULL,
-  `EMP_CEP` varchar(9) default NULL,
-  `EMP_LOGO` varchar(255) default NULL,
-  PRIMARY KEY  (`EMP_CODIGO_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `empresa`
---
-
-/*!40000 ALTER TABLE `empresa` DISABLE KEYS */;
-INSERT INTO `empresa` (`EMP_CODIGO_ID`,`EMP_NOME_REDUZIDO`,`EMP_NOME_FANTASIA`,`EMP_RAZAO_SOCIAL`,`EMP_CNPJ`,`EMP_ENDERECO`,`EMP_NUMERO`,`EMP_BAIRRO`,`EMP_CODIGO_CIDADE_ID`,`EMP_UF`,`EMP_CEP`,`EMP_LOGO`) VALUES 
- (1,'HCELL MANUTENÇÕES','HCELL MANUTENÇÕES','HENRIQUE SILVA GONÇALVES 1230594645789','00000000000000','RUA SANTO ANTONIO','104','ROÇA GRANDE',0,'MG','34545780',NULL);
-/*!40000 ALTER TABLE `empresa` ENABLE KEYS */;
-
-
---
--- Definition of table `funcionario`
---
-
-DROP TABLE IF EXISTS `funcionario`;
-CREATE TABLE `funcionario` (
-  `FUNC_CODIGO_ID` int(10) unsigned NOT NULL auto_increment,
-  `FUNC_NOME_COMPLETO` varchar(300) NOT NULL,
-  `FUNC_CODIGO_CARGO` int(10) unsigned NOT NULL,
-  `FUNC_ENDERECO` varchar(150) default NULL,
-  `FUNC_NUMERO` varchar(8) default NULL,
-  `FUNC_BAIRRO` varchar(150) default NULL,
-  `FUNC_CODIGO_CIDADE` int(10) unsigned default NULL,
-  `FUNC_UF` varchar(2) default 'MG',
-  `FUNC_CPF` varchar(11) default NULL,
-  `FUNC_DATA_ADMISSAO` datetime NOT NULL,
-  PRIMARY KEY  (`FUNC_CODIGO_ID`),
-  UNIQUE KEY `CPF` (`FUNC_CPF`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `funcionario`
---
-
-/*!40000 ALTER TABLE `funcionario` DISABLE KEYS */;
-INSERT INTO `funcionario` (`FUNC_CODIGO_ID`,`FUNC_NOME_COMPLETO`,`FUNC_CODIGO_CARGO`,`FUNC_ENDERECO`,`FUNC_NUMERO`,`FUNC_BAIRRO`,`FUNC_CODIGO_CIDADE`,`FUNC_UF`,`FUNC_CPF`,`FUNC_DATA_ADMISSAO`) VALUES 
- (1,'Administrador',1,NULL,NULL,NULL,NULL,'MG',NULL,'0000-00-00 00:00:00'),
- (2,'Italo Angelo do Espirito Santo',2,'Rua José Augusto Pinto','190','Pompéu',3156700,'MG','12441712632','2017-12-19 15:43:00');
-/*!40000 ALTER TABLE `funcionario` ENABLE KEYS */;
-
+CREATE DATABASE IF NOT EXISTS liber;
+USE liber;
 
 --
 -- Definition of table `municipio`
@@ -5701,31 +5614,6 @@ INSERT INTO `municipio` (`MUN_CODIGO_ID`,`MUN_CODIGO_IBGE`,`MUN_NOME`,`MUN_UF`) 
  (5569,5222302,'Vila Propício','GO'),
  (5570,5300108,'Brasília','DF');
 /*!40000 ALTER TABLE `municipio` ENABLE KEYS */;
-
-
---
--- Definition of table `usuario`
---
-
-DROP TABLE IF EXISTS `usuario`;
-CREATE TABLE `usuario` (
-  `USU_CODIGO_ID` int(10) unsigned NOT NULL auto_increment,
-  `USU_NOME` varchar(255) default NULL,
-  `USU_LOGIN` varchar(50) default NULL,
-  `USU_SENHA` varchar(20) default NULL,
-  `USU_CODIGO_FUNC_ID` int(10) unsigned default NULL,
-  PRIMARY KEY  (`USU_CODIGO_ID`),
-  UNIQUE KEY `login` (`USU_LOGIN`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `usuario`
---
-
-/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` (`USU_CODIGO_ID`,`USU_NOME`,`USU_LOGIN`,`USU_SENHA`,`USU_CODIGO_FUNC_ID`) VALUES 
- (1,'Italo Angelo','italoangelo13','galoforte2',1);
-/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 
 
 

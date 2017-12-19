@@ -29,157 +29,283 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.financeiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this._pnlBotoes = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.menuStrip1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
+            this._barraStatus = new System.Windows.Forms.StatusStrip();
+            this._menu = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.controleDeUsuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controleDePermissõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informaçõesDoSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this._btnSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrativoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controleDeFuncionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controleDePontoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.controleDeContasAPagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controleDeContasAReceberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controleDePromoçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aberturaEFechamentoDeCaixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.estoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controleDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.entradaDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pesquisarFuncionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarFuncionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.atualizarExcluirFuncionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDM001RelaçãoDeFuncionariosPorCargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDM002RelaçãoDeFuncionariosContratadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDM003RelaçãoDeFuncionariosDemitidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDM004RelaçãoGeralDeFuncionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.gráficoDeFuncionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._menu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // _barraStatus
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sistemaToolStripMenuItem,
-            this.MenuItem,
-            this.financeiroToolStripMenuItem,
-            this.comercialToolStripMenuItem});
-            this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.MdiWindowListItem = this.sistemaToolStripMenuItem;
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(1264, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this._barraStatus.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this._barraStatus.Location = new System.Drawing.Point(0, 539);
+            this._barraStatus.Name = "_barraStatus";
+            this._barraStatus.Size = new System.Drawing.Size(1184, 22);
+            this._barraStatus.TabIndex = 1;
+            this._barraStatus.Text = "statusStrip3";
             // 
-            // statusStrip1
+            // _menu
             // 
-            this.statusStrip1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.statusStrip1.Location = new System.Drawing.Point(0, 589);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1264, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
+            this._menu.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this._menu.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.administrativoToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3,
+            this.estoqueToolStripMenuItem});
+            this._menu.Location = new System.Drawing.Point(0, 0);
+            this._menu.Name = "_menu";
+            this._menu.Size = new System.Drawing.Size(1184, 24);
+            this._menu.TabIndex = 2;
+            this._menu.Text = "menuStrip2";
             // 
-            // flowLayoutPanel1
+            // toolStripMenuItem1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
-            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel3);
-            this.flowLayoutPanel1.Controls.Add(this._pnlBotoes);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 24);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1264, 565);
-            this.flowLayoutPanel1.TabIndex = 3;
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.controleDeUsuáriosToolStripMenuItem,
+            this.controleDePermissõesToolStripMenuItem,
+            this.informaçõesDoSistemaToolStripMenuItem,
+            this.toolStripSeparator1,
+            this._btnSair});
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(72, 20);
+            this.toolStripMenuItem1.Text = "Sistema";
             // 
-            // sistemaToolStripMenuItem
+            // controleDeUsuáriosToolStripMenuItem
             // 
-            this.sistemaToolStripMenuItem.Font = new System.Drawing.Font("Roboto Slab", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sistemaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
-            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.sistemaToolStripMenuItem.Text = "Sistema";
+            this.controleDeUsuáriosToolStripMenuItem.Name = "controleDeUsuáriosToolStripMenuItem";
+            this.controleDeUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.controleDeUsuáriosToolStripMenuItem.Text = "Controle de Usuários";
             // 
-            // MenuItem
+            // controleDePermissõesToolStripMenuItem
             // 
-            this.MenuItem.Font = new System.Drawing.Font("Roboto Slab", 9F, System.Drawing.FontStyle.Bold);
-            this.MenuItem.ForeColor = System.Drawing.Color.White;
-            this.MenuItem.Name = "MenuItem";
-            this.MenuItem.Size = new System.Drawing.Size(107, 20);
-            this.MenuItem.Text = "Administrativo";
+            this.controleDePermissõesToolStripMenuItem.Name = "controleDePermissõesToolStripMenuItem";
+            this.controleDePermissõesToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.controleDePermissõesToolStripMenuItem.Text = "Controle de Permissões";
             // 
-            // financeiroToolStripMenuItem
+            // informaçõesDoSistemaToolStripMenuItem
             // 
-            this.financeiroToolStripMenuItem.Font = new System.Drawing.Font("Roboto Slab", 9F, System.Drawing.FontStyle.Bold);
-            this.financeiroToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.financeiroToolStripMenuItem.Name = "financeiroToolStripMenuItem";
-            this.financeiroToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
-            this.financeiroToolStripMenuItem.Text = "Financeiro";
+            this.informaçõesDoSistemaToolStripMenuItem.Name = "informaçõesDoSistemaToolStripMenuItem";
+            this.informaçõesDoSistemaToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.informaçõesDoSistemaToolStripMenuItem.Text = "Informações do Sistema";
             // 
-            // comercialToolStripMenuItem
+            // toolStripSeparator1
             // 
-            this.comercialToolStripMenuItem.Font = new System.Drawing.Font("Roboto Slab", 9F, System.Drawing.FontStyle.Bold);
-            this.comercialToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.comercialToolStripMenuItem.Name = "comercialToolStripMenuItem";
-            this.comercialToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
-            this.comercialToolStripMenuItem.Text = "Comercial";
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(231, 6);
             // 
-            // _pnlBotoes
+            // _btnSair
             // 
-            this._pnlBotoes.Location = new System.Drawing.Point(3, 568);
-            this._pnlBotoes.Name = "_pnlBotoes";
-            this._pnlBotoes.Size = new System.Drawing.Size(673, 559);
-            this._pnlBotoes.TabIndex = 0;
+            this._btnSair.Name = "_btnSair";
+            this._btnSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this._btnSair.Size = new System.Drawing.Size(234, 22);
+            this._btnSair.Text = "Sair";
+            this._btnSair.Click += new System.EventHandler(this._btnSair_Click);
             // 
-            // flowLayoutPanel2
+            // administrativoToolStripMenuItem
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.flowLayoutPanel2.Controls.Add(this.panel1);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(625, 559);
-            this.flowLayoutPanel2.TabIndex = 0;
+            this.administrativoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.controleDeFuncionariosToolStripMenuItem,
+            this.controleDePontoToolStripMenuItem});
+            this.administrativoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.administrativoToolStripMenuItem.Name = "administrativoToolStripMenuItem";
+            this.administrativoToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.administrativoToolStripMenuItem.Text = "Administrativo";
             // 
-            // flowLayoutPanel3
+            // controleDeFuncionariosToolStripMenuItem
             // 
-            this.flowLayoutPanel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.flowLayoutPanel3.Controls.Add(this.panel2);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(634, 3);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(625, 559);
-            this.flowLayoutPanel3.TabIndex = 0;
+            this.controleDeFuncionariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pesquisarFuncionariosToolStripMenuItem,
+            this.cadastrarFuncionariosToolStripMenuItem,
+            this.atualizarExcluirFuncionariosToolStripMenuItem,
+            this.relatoriosToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.gráficoDeFuncionariosToolStripMenuItem});
+            this.controleDeFuncionariosToolStripMenuItem.Name = "controleDeFuncionariosToolStripMenuItem";
+            this.controleDeFuncionariosToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.controleDeFuncionariosToolStripMenuItem.Text = "Controle de Funcionarios";
             // 
-            // panel1
+            // controleDePontoToolStripMenuItem
             // 
-            this.panel1.BackColor = System.Drawing.Color.IndianRed;
-            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(622, 100);
-            this.panel1.TabIndex = 0;
+            this.controleDePontoToolStripMenuItem.Name = "controleDePontoToolStripMenuItem";
+            this.controleDePontoToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.controleDePontoToolStripMenuItem.Text = "Controle de Ponto";
             // 
-            // panel2
+            // toolStripMenuItem2
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightCoral;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(615, 100);
-            this.panel2.TabIndex = 0;
+            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.controleDeContasAPagarToolStripMenuItem,
+            this.controleDeContasAReceberToolStripMenuItem,
+            this.controleDePromoçõesToolStripMenuItem,
+            this.aberturaEFechamentoDeCaixaToolStripMenuItem});
+            this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(88, 20);
+            this.toolStripMenuItem2.Text = "Financeiro";
+            // 
+            // controleDeContasAPagarToolStripMenuItem
+            // 
+            this.controleDeContasAPagarToolStripMenuItem.Name = "controleDeContasAPagarToolStripMenuItem";
+            this.controleDeContasAPagarToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
+            this.controleDeContasAPagarToolStripMenuItem.Text = "Controle de Contas a Pagar";
+            // 
+            // controleDeContasAReceberToolStripMenuItem
+            // 
+            this.controleDeContasAReceberToolStripMenuItem.Name = "controleDeContasAReceberToolStripMenuItem";
+            this.controleDeContasAReceberToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
+            this.controleDeContasAReceberToolStripMenuItem.Text = "Controle de Contas a Receber";
+            // 
+            // controleDePromoçõesToolStripMenuItem
+            // 
+            this.controleDePromoçõesToolStripMenuItem.Name = "controleDePromoçõesToolStripMenuItem";
+            this.controleDePromoçõesToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
+            this.controleDePromoçõesToolStripMenuItem.Text = "Controle de Promoções";
+            // 
+            // aberturaEFechamentoDeCaixaToolStripMenuItem
+            // 
+            this.aberturaEFechamentoDeCaixaToolStripMenuItem.Name = "aberturaEFechamentoDeCaixaToolStripMenuItem";
+            this.aberturaEFechamentoDeCaixaToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
+            this.aberturaEFechamentoDeCaixaToolStripMenuItem.Text = "Abertura e Fechamento de Caixa";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(85, 20);
+            this.toolStripMenuItem3.Text = "Comercial";
+            // 
+            // estoqueToolStripMenuItem
+            // 
+            this.estoqueToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.controleDeProdutosToolStripMenuItem,
+            this.entradaDeProdutosToolStripMenuItem});
+            this.estoqueToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.estoqueToolStripMenuItem.Text = "Estoque";
+            // 
+            // controleDeProdutosToolStripMenuItem
+            // 
+            this.controleDeProdutosToolStripMenuItem.Name = "controleDeProdutosToolStripMenuItem";
+            this.controleDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(261, 22);
+            this.controleDeProdutosToolStripMenuItem.Text = "Controle de Produtos";
+            // 
+            // entradaDeProdutosToolStripMenuItem
+            // 
+            this.entradaDeProdutosToolStripMenuItem.Name = "entradaDeProdutosToolStripMenuItem";
+            this.entradaDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(261, 22);
+            this.entradaDeProdutosToolStripMenuItem.Text = "Entrada e Saida de Produtos";
+            // 
+            // pesquisarFuncionariosToolStripMenuItem
+            // 
+            this.pesquisarFuncionariosToolStripMenuItem.Name = "pesquisarFuncionariosToolStripMenuItem";
+            this.pesquisarFuncionariosToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
+            this.pesquisarFuncionariosToolStripMenuItem.Text = "Pesquisar Funcionarios";
+            this.pesquisarFuncionariosToolStripMenuItem.Click += new System.EventHandler(this.pesquisarFuncionariosToolStripMenuItem_Click);
+            // 
+            // cadastrarFuncionariosToolStripMenuItem
+            // 
+            this.cadastrarFuncionariosToolStripMenuItem.Name = "cadastrarFuncionariosToolStripMenuItem";
+            this.cadastrarFuncionariosToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
+            this.cadastrarFuncionariosToolStripMenuItem.Text = "Cadastrar Funcionarios";
+            // 
+            // atualizarExcluirFuncionariosToolStripMenuItem
+            // 
+            this.atualizarExcluirFuncionariosToolStripMenuItem.Name = "atualizarExcluirFuncionariosToolStripMenuItem";
+            this.atualizarExcluirFuncionariosToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
+            this.atualizarExcluirFuncionariosToolStripMenuItem.Text = "Atualizar / Excluir Funcionarios";
+            // 
+            // relatoriosToolStripMenuItem
+            // 
+            this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aDM001RelaçãoDeFuncionariosPorCargosToolStripMenuItem,
+            this.aDM002RelaçãoDeFuncionariosContratadosToolStripMenuItem,
+            this.aDM003RelaçãoDeFuncionariosDemitidosToolStripMenuItem,
+            this.aDM004RelaçãoGeralDeFuncionariosToolStripMenuItem});
+            this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
+            this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
+            this.relatoriosToolStripMenuItem.Text = "Relatorios";
+            // 
+            // aDM001RelaçãoDeFuncionariosPorCargosToolStripMenuItem
+            // 
+            this.aDM001RelaçãoDeFuncionariosPorCargosToolStripMenuItem.Name = "aDM001RelaçãoDeFuncionariosPorCargosToolStripMenuItem";
+            this.aDM001RelaçãoDeFuncionariosPorCargosToolStripMenuItem.Size = new System.Drawing.Size(389, 22);
+            this.aDM001RelaçãoDeFuncionariosPorCargosToolStripMenuItem.Text = "ADM001 - Relação de Funcionarios por Cargos";
+            // 
+            // aDM002RelaçãoDeFuncionariosContratadosToolStripMenuItem
+            // 
+            this.aDM002RelaçãoDeFuncionariosContratadosToolStripMenuItem.Name = "aDM002RelaçãoDeFuncionariosContratadosToolStripMenuItem";
+            this.aDM002RelaçãoDeFuncionariosContratadosToolStripMenuItem.Size = new System.Drawing.Size(389, 22);
+            this.aDM002RelaçãoDeFuncionariosContratadosToolStripMenuItem.Text = "ADM002 - Relação de Funcionarios Contratados";
+            // 
+            // aDM003RelaçãoDeFuncionariosDemitidosToolStripMenuItem
+            // 
+            this.aDM003RelaçãoDeFuncionariosDemitidosToolStripMenuItem.Name = "aDM003RelaçãoDeFuncionariosDemitidosToolStripMenuItem";
+            this.aDM003RelaçãoDeFuncionariosDemitidosToolStripMenuItem.Size = new System.Drawing.Size(389, 22);
+            this.aDM003RelaçãoDeFuncionariosDemitidosToolStripMenuItem.Text = "ADM003 - Relação de Funcionarios Demitidos";
+            // 
+            // aDM004RelaçãoGeralDeFuncionariosToolStripMenuItem
+            // 
+            this.aDM004RelaçãoGeralDeFuncionariosToolStripMenuItem.Name = "aDM004RelaçãoGeralDeFuncionariosToolStripMenuItem";
+            this.aDM004RelaçãoGeralDeFuncionariosToolStripMenuItem.Size = new System.Drawing.Size(389, 22);
+            this.aDM004RelaçãoGeralDeFuncionariosToolStripMenuItem.Text = "ADM004 - Relação Geral de Funcionarios";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(279, 6);
+            // 
+            // gráficoDeFuncionariosToolStripMenuItem
+            // 
+            this.gráficoDeFuncionariosToolStripMenuItem.Name = "gráficoDeFuncionariosToolStripMenuItem";
+            this.gráficoDeFuncionariosToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
+            this.gráficoDeFuncionariosToolStripMenuItem.Text = "Gráfico de Funcionarios";
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 611);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.menuStrip1);
+            this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.Controls.Add(this._barraStatus);
+            this.Controls.Add(this._menu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this._menu;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Dashboard_FormClosing);
             this.Load += new System.EventHandler(this.Dashboard_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
+            this._menu.ResumeLayout(false);
+            this._menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,6 +325,38 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel _pnlBotoes;
+        private System.Windows.Forms.MenuStrip _barraMenu;
+        private System.Windows.Forms.StatusStrip statusStrip2;
+        private System.Windows.Forms.StatusStrip _barraStatus;
+        private System.Windows.Forms.MenuStrip _menu;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem controleDeUsuáriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controleDePermissõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informaçõesDoSistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem _btnSair;
+        private System.Windows.Forms.ToolStripMenuItem administrativoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem estoqueToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controleDeFuncionariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controleDePontoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controleDeContasAPagarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controleDeContasAReceberToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controleDePromoçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aberturaEFechamentoDeCaixaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controleDeProdutosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem entradaDeProdutosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pesquisarFuncionariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarFuncionariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem atualizarExcluirFuncionariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatoriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aDM001RelaçãoDeFuncionariosPorCargosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aDM002RelaçãoDeFuncionariosContratadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aDM003RelaçãoDeFuncionariosDemitidosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aDM004RelaçãoGeralDeFuncionariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem gráficoDeFuncionariosToolStripMenuItem;
 
 
     }

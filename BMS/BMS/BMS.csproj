@@ -74,6 +74,7 @@
     <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -84,6 +85,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrativo\Controle_Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrativo\Controle_Funcionario.Designer.cs">
+      <DependentUpon>Controle_Funcionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\BancoDados.cs" />
     <Compile Include="Classes\Controle.cs" />
     <Compile Include="Classes\Session.cs" />
@@ -102,6 +109,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administrativo\Controle_Funcionario.resx">
+      <DependentUpon>Controle_Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,9 +161,7 @@
     <None Include="Resources\logo-bms.png" />
     <None Include="Resources\background-triangulos-livrit.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Administrativo\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
